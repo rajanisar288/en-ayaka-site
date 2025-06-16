@@ -175,3 +175,22 @@ ul,
 ol {
   padding-left: 1em;
 }
+
+#site-header {
+  transition: 320ms;
+  position: relative; 
+}
+
+#site-header.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(33 31 31 / 70%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: 320ms;
+}
+
