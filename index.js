@@ -54,3 +54,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("clock-wrapper").classList.remove("hidden");
   setInterval(updateTime, 1000);
 });
+
+window.addEventListener("scroll", () => 
+  document.getElementById("site-header").classList.toggle("scrolled", window.scrollY > 20)
+);
+
